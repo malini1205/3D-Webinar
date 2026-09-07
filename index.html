@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="index.js">
+</head>
+<body>
+    <header>
+        <h1>Inventory Manager</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <label>Product Name: <input type="text" id="productName" required></label>
+                <label>Category: <input type="text" id="productCategory" required></label>
+                <label>Price: <input type="number" id="productPrice" step="0.01" required></label>
+                <label>Stock: <input type="number" id="productStock" required></label>
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+        <section>
+            <h2>Current Inventory</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Low Stock Alerts</h2>
+            <ul id="lowStockList"></ul>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
